@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PDF Splitter Visual Mock</title>
+<style>
+body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;color:#f8fafc;background:linear-gradient(180deg,#172033,#111827 55%,#0f172a)}
+*{box-sizing:border-box}
+.app{display:grid;grid-template-columns:286px 1fr;min-height:100vh}
+aside{padding:26px 20px;border-right:1px solid rgba(255,255,255,.14);background:rgba(17,24,39,.92)}
+.brand{display:flex;gap:12px;align-items:center;margin-bottom:34px}.mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#8fa2ff,#a855f7)}.brand span{display:block;color:#cbd5e1;font-size:12px}.nav{display:grid;gap:8px}.nav div{border-radius:13px;min-height:42px;display:flex;align-items:center;padding:0 15px;color:#cbd5e1;font-weight:800}.nav .active{color:#f8fafc;background:rgba(143,162,255,.16);border:1px solid rgba(143,162,255,.26)}
+main{padding:24px 28px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.file h1{margin:0;font-size:19px}.file p{margin:4px 0 0;color:#cbd5e1;font-size:13px}.btn{border:0;border-radius:13px;min-height:42px;padding:0 15px;font-weight:800;background:linear-gradient(135deg,#5eead4,#ccfbf1);color:#062018}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}.stat{padding:16px 18px;border-radius:18px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08)}.stat span{color:#cbd5e1;font-size:12px;font-weight:800}.stat strong{display:block;font-size:28px;margin-top:8px}
+.grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:18px}.card{border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(31,41,55,.96);box-shadow:0 22px 54px rgba(0,0,0,.28);overflow:hidden}.head{padding:20px;border-bottom:1px solid rgba(255,255,255,.14)}.head h2{margin:0}.head p{margin:5px 0 0;color:#cbd5e1;font-size:13px}.list{padding:10px;display:grid;gap:6px}.row{display:grid;grid-template-columns:34px 92px 1fr 76px;gap:12px;align-items:center;min-height:96px;padding:10px;border-radius:17px}.row.active{background:rgba(255,255,255,.10);border:1px solid rgba(143,162,255,.32)}.icon{width:34px;height:34px;border-radius:12px;display:grid;place-items:center;color:#a8b2ff;background:rgba(143,162,255,.16)}.thumb{height:68px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#0f172a;position:relative}.thumb:after{content:"";position:absolute;inset:12px;border-radius:6px;background:linear-gradient(135deg,#fff,#cbd5e1)}.row strong{font-size:14px}.row p{margin:4px 0 0;color:#cbd5e1;font-size:12px}.pill{border-radius:999px;padding:4px 7px;color:#86efac;background:rgba(134,239,172,.12);font-size:11px;font-weight:900}.preview{margin:20px;border-radius:20px;border:1px solid rgba(255,255,255,.14);height:440px;background:#0f172a;display:grid;place-items:center}.page{width:280px;height:380px;background:linear-gradient(#fff,#e2e8f0);border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.35);position:relative}.page:before{content:"";position:absolute;left:32px;right:32px;top:46px;height:12px;background:#111827;box-shadow:0 34px 0 #94a3b8,0 68px 0 #94a3b8,0 138px 0 #8fa2ff,0 172px 0 #5eead4}
+</style>
+</head>
+<body>
+<div class="app">
+<aside><div class="brand"><div class="mark">✦</div><div><strong>Paper Extractor</strong><span>PDF Image Splitter</span></div></div><div class="nav"><div class="active">1. ページ画像分割</div><div>2. 図表候補検出</div><div>3. 図表レビュー</div><div>4. Sheets連携</div></div></aside>
+<main>
+<div class="top"><div class="file"><h1>sample_paper.pdf</h1><p>3.8 MB / 12ページ / 採用 12ページ</p></div><button class="btn">採用画像を書き出し</button></div>
+<div class="stats"><div class="stat"><span>Total Pages</span><strong>12</strong></div><div class="stat"><span>Selected</span><strong>12</strong></div><div class="stat"><span>Format</span><strong>PNG</strong></div><div class="stat"><span>Scale</span><strong>1.8x</strong></div></div>
+<div class="grid">
+<section class="card"><div class="head"><h2>ページ画像一覧</h2><p>PDFから分割されたページ画像を確認します。</p></div><div class="list">
+<div class="row active"><div class="icon">▧</div><div class="thumb"></div><div><strong>Page 1</strong><p>PDFページをPNG画像としてレンダリング済み。</p></div><span class="pill">採用</span></div>
+<div class="row"><div class="icon">▧</div><div class="thumb"></div><div><strong>Page 2</strong><p>PDFページをPNG画像としてレンダリング済み。</p></div><span class="pill">採用</span></div>
+<div class="row"><div class="icon">▧</div><div class="thumb"></div><div><strong>Page 3</strong><p>PDFページをPNG画像としてレンダリング済み。</p></div><span class="pill">採用</span></div>
+</div></section>
+<section class="card"><div class="head"><h2>Page 1</h2><p>PNGプレビュー</p></div><div class="preview"><div class="page"></div></div></section>
+</div>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@rolldown/binding-win32-x64-msvc": "^1.0.1",
+    "@vitejs/plugin-react": "latest",
+    "jszip": "^3.10.1",
+    "lucide-react": "latest",
+    "pdfjs-dist": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  }
+}
