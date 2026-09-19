@@ -39,9 +39,4 @@ const result = await splitPdfIntoImages(file, {
 
 `scale` を上げると高解像度になりますが、メモリ使用量が増えます。
 
-## 次の実装ステップ
 
-1. 生成されたページ画像をバックエンドへ渡す
-2. PyMuPDF / LayoutParser / OpenCV などで Figure/Table 候補領域を検出
-3. 候補領域だけをcropしてレビューUIに表示
-4. 採用された図表候補をGoogle Sheetsへ貼り付け
